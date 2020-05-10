@@ -1,0 +1,17 @@
+extends layout
+
+block content
+    h1= heading
+    form(method='POST' action='/new' class='form-style')
+        label(for='name' class='label-style') Name: 
+        br
+        input(type='text' name='name' class='input-style' required)
+        br
+        br
+        label(for=text class='label-style') Message:
+        br 
+        input(type='text' name='text' class='input-style' required)
+        br
+        br
+        br
+        button(type='submit' value='submit' class='button-style') Submit
